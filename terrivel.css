@@ -1,0 +1,23 @@
+div{
+    display: flex;
+    flex-flow: row;
+    width: 500px;
+    padding: 5px;
+    position: relative;
+}
+
+input{
+    width: 35px;
+    display: inline-block;
+    position: relative;
+    right: 0px;
+
+}
+.nomeMonstro{
+  width: 200px;
+}
+
+#buttons{
+  display: block;
+  margin: auto 0;
+}

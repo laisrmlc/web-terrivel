@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Predas(sim, predas)</title>
+        <meta charset="utf-8"/>
+        <link href="terrivel.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+      <form action="http://terrivel.herokuapp.com/monster">
+        <div><label for="nomeMonstro">Nome do Monstro:</label>
+            <input name="nomeMonstro" id="nomeMonstro" type="text" class="nomeMonstro" width="48"required/></div>
+        <div><label for="quant_pedras">Quantidade de pedras:</label>
+            <input name="quant_pedras" id="quant_pedras" type="number" value="1" min="0" required/></div>
+        <div><label for="tam_pedras">Tamanho das pedras:</label>
+            <input name="tam_pedras" id="tam_pedras" type="number" value="3" min="1" max="7" step="0.5" required/></div>
+        <div><label for="tipo_pedras_sortidas">Pedras Sortidas?</label>
+            <input name="tipo_pedras_sortidas" id="tipo_pedras_sortidas" type="checkbox"/></div>
+        <div><label for="tipo_pedras">Tipo de Pedra:</label>
+            <select name="tipo_pedras" id="tipo_pedras" required>
+                <option disabled selected>Tipo de Pedra</option>
+                <option value="marroada">Marroada</option>
+                <option value="ametista">Ametista</option>
+                <option value="topazio">Topázio</option>
+                <option value="espinela">Espinela</option>
+              </select></div>
+        <p>Cores do céu:</p>
+        <div><label for="corCeu1">Topo:</label>
+            <input name="corCeu1" id="corCeu1" type="color" value="#4682B4"/></div>
+        <div><label for="corCeu2">Base:</label>
+            <input name="corCeu2" id="corCeu2" type="color" value="#FA8072"/></div>
+                <section id="buttons">
+                    <button id="button_get" type="submit" formmethod="get">Enviar por GET</button>
+                    <button id="button_post" type="submit" formmethod="post">Enviar por POST</button>
+                    <button id="reset" type="reset">Limpar</button>
+                </section>
+        </div>
+            </form>
+    </body>
+</html>
